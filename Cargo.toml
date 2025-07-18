@@ -1,0 +1,16 @@
+[package]
+name = "heart-registry"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[[bin]]
+name = "heart-registry-server"
+path = "cmd/server/src/main.rs"
+
+[workspace]
+resolver = "2"
+members = [
+    "cmd/server/"
+]
